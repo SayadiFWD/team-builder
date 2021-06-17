@@ -15,6 +15,10 @@ const Form = (props) => {
 
   const hangleSubmit = (e) => {
     e.preventDefault();
+    setMembe({
+        name:"",
+        lastn:""
+    })
     props.setMember([...props.member, membe]);
   };
 
